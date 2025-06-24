@@ -32,7 +32,7 @@ npm install nodemon
 
 4.  Set up your PostgreSQL database:
 
-Create a database, e.g. users_db
+Create a database, e.g. users_database
 
 Run the SQL:
 
@@ -46,11 +46,11 @@ CREATE TABLE users (
 5.  Create .env file (refer to .env.example)
 
 PORT=5000
-DB_HOST=localhost
-DB_USER=postgres
-DB_PASSWORD=your_password
-DB_NAME=users_db
-DB_PORT=5432
+DATABASE_HOST=localhost
+DATABASE_USER=postgres
+DATABASE_PASSWORD=your_password
+DATABASE_NAME=users_db
+DATABASE_PORT=5432
 
 
 6.  Run the server
@@ -78,7 +78,7 @@ Server runs on: http://localhost:5000
 expressandpostgresql/
     controller/
         users.js
-    db/
+    database/
         index.js
     images/
         image.png
